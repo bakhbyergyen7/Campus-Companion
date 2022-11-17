@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="login.html">Logout</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--This when run in PHP--> 
+    <?php
+        $Username = $_POST['Uname'];
+    ?>
+    <div class="logodiv">
+        <div class="imgcontainer">
+            <img src="img/logo.png" alt="Avatar" class="avatar">
+          </div>
+    </div>
+    <div style="padding-left:16px">
+            <!--This when run in PHP--> 
+
+        <h2>Welcome <?php echo "$Username"; ?> to Campus Companion Home</h2>
+        <p></p>
+    </div>
+    <!--Data Base Here in this div--> 
+    <div>
+
+    </div>
+
+      <!--Script for the navbar--> 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
