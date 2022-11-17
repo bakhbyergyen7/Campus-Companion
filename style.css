@@ -29,8 +29,7 @@ body {
 .topnav a.active {
     background-color: white;
     color: #3498DB;
-    border-left: 3px solid #3498DB;
-    border-top: 3px solid #3498DB;
+    border:  3px solid #3498DB;
 }
 
 .topnav .icon {
