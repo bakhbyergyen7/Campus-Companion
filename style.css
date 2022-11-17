@@ -1,5 +1,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-left-color: 50px gray;
+    border-right-color: 50px gray;
 }
 
 .formclass {
@@ -158,4 +162,6 @@ span.psw {
   .logodiv {
     border: 3px solid #3498DB;
   }
-  
+  .maindiv {
+    background-color: gray;
+  }
