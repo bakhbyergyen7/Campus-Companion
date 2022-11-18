@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/dataTables.bootstrap5.min.css">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.11.1/js/dataTables.bootstrap5.min.js"></script>
+</head>
+
+<body>
+    <div class="logodiv">
+        <div class="imgcontainer">
+            <img src="img/logo.png" alt="Avatar" class="avatar">
+        </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" class="active">Home</a>
+        <a href="login.html">Logout</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="entrycreate.html">Create Entry</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--This when run in PHP-->
+    <?php
+        $Username = $_POST['Uname'];
+    ?>
+    <div style="padding-left:16px">
+        <!--This when run in PHP-->
+
+        <h2>Welcome
+            <?php echo "$Username"; ?> to Campus Companion Home
+        </h2>
+        <p></p>
+    </div>
+    <!--Data Base Here in this div-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    <input type="text" class="search-input" placeholder="Event">
+                </th>
+                <th>
+                    <input type="text" class="search-input" placeholder="Time">
+                </th>
+                <th>
+                    <input type="text" class="search-input" placeholder="Location">
+                </th>
+                <th>
+                    <input type="text" class="search-input" placeholder="Link">
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <tr>
+                <td>example Event Name</td>
+                <td>example Event Time</td>
+                <td>example Event Location</td>
+                <td><a href="https://rockchalkcentral.ku.edu/organizations">Example Link Text</a></td>
+            </tr>
+            <!-- Add more entries here with same format as above-->
+        </tbody>
+    </table>
+    <script src="home.js"></script>
+    
+    <!--Script for the navbar-->
+
+    <script type="text/javascript" class="init">
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+        $(document).ready(function () {
+            // Create a new DataTable object
+            table = $('#example').DataTable({
+                ajax: {
+                    url: '/exampleData',
+                },
+                columns: [
+                    { data: 'userId' },
+                    { data: 'id' },
+                    { data: 'title' },
+                    { data: 'completed' }
+                ]
+            })
+        });
+    </script>
+
+</body>
+<footer>
+    jHawkSoft
+</footer>
+
+</html>

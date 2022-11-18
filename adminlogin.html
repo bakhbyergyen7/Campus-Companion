@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+  <body>
+    <div class="logodiv">
+      <div class="imgcontainer">
+          <img src="img/logo.png" alt="Avatar" class="avatar">
+        </div>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="login.html" class="active">Login</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <h2>Jhawksoft Admin Login</h2>
+
+    <form action="adminlogin.html" method="post" class="formclass">
+      <div class="imgcontainer">
+        <img src="img/logo.png" alt="Avatar" class="avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <span class="psw">Forgot <a href="#">password?</a></span>
+        <p>
+
+
+
+        </p>
+      </div>
+    </form>
+    
+    <h3>Or If You Are New:</h3>
+
+    <form action="create.html" method="post" >
+        <style>
+            .button1{width: 250px;}
+        </style>
+            
+        <button class="button1" type="submit">Create An Account</button>
+                
+    </form>
+    
+  </body>
+  <footer>
+
+    
+    jHawkSoft
+</footer>
+</html>
