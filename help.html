@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+ 
+<body>
+    <!--Navigation--> 
+    <div class="topnav" id="myTopnav">
+        <a href="home.html" >Home</a>
+        <a href="login.html">Logout</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="help.html" class="active">Help</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    <!--This when run in PHP
+    <?php
+        $Username = $_POST['Uname'];
+    ?>
+    
+    
+    --> 
+    <div class="logodiv">
+        <div class="imgcontainer">
+            <img src="img/logo.png" alt="Avatar" class="avatar">
+          </div>
+    </div>
+    <div style="padding-left:16px">
+            <!--This when run in PHP--> 
+        <h2>Help</h2>
+        <h3>FAQ</h3>
+        <h4>1. Is there a way I can see the resources on the map instead of as a list?</h4>
+        <p>Our team of dedicated developers are working on the very issue to come up with the next version of the webpage where the resources can be viewed on the map. Stay tuned!
+        </p>
+        <h4>2. Should I be concerned about sharing my personal information such as my email and password?</h4>
+        <p>Not at all. Your data can only be for the purpose of accessing the Campus Companion webpage. We take our valued users' privacy very seriously. In the nearest future, we are hoping team up with the KU IT for a better security.
+        </p>
+        <h4>3. How do I reset my password?</h4>
+        <p>No worries. If you go to the login page, you can simply click "Forgot Password?" button. There, you should be able to create your new password.
+        </p>
+        <h4>4. Can my friends from K-State join Campus Companion?</h4>
+        <p>Unfortunately, no. Our main goal is to provide the KU students with free resources they can get on campus. Not to mention the rivalry between the Jayhawks and the Wildcats.</p>
+        <h4>5. As a regular user, I would like to contribute to the running list of free resources. Is that possible?
+        </h4>
+        <p>Indeed, that is exactly where we are going. To get an admin account, you need to contact one of our representatives using our Contact button. Don't forget to show some sort of documentation that shows that you represent a student organization and/or club. </p>
+    </div>
+
+
+
+
+    <!--About Here in this div--> 
+    <div>
+
+    </div>
+
+    
+    
+    
+    <!--Script for the navbar--> 
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
