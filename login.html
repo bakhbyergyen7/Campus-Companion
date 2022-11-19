@@ -44,14 +44,22 @@
         type="email" 
         id="emailField" 
         pattern=".+@ku\.edu"
-        size="64" 
+        size="64"
+        maxlength="64" 
         placeholder="jayhawk@ku.edu" 
         name="uname"
         title="Please provide only a KU email address" 
         required>
 
         <label for="psw"><b>Password: </b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input 
+        type="password" 
+        placeholder="Enter Password" 
+        name="psw"
+        minlength="8"
+        maxlength="32"
+        size="32" 
+        required>
 
         <button type="submit">Login</button>
         <label>
