@@ -4,32 +4,39 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css"
+    <!--
+        <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.1/css/dataTables.bootstrap5.min.css">
+    -->
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script type="text/javascript" language="javascript"
         src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" language="javascript"
         src="https://cdn.datatables.net/1.11.1/js/dataTables.bootstrap5.min.js"></script>
+
+        <title>Home</title>
+        <header>
+            <div class="logodiv">
+                <h1><span id="blue">j</span><span id="red">hawk</span><span id="blue">soft</span></h1>
+            </div>
+            <div class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="home.html" >Home</a></li>
+                <li><a href="login.html">Logout</a></li>
+                <li><a id="nav" href="contact.html" >Contact</a></li>
+                <li><a id="nav" href="about.html">About</a></li>
+                <li><a href="help.html" class="active">Help</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+             <i class="fa fa-bars"></i></a>
+            
+        </div>
+    </header>
 </head>
 
 <body>
-    <div class="logodiv">
-        <div class="imgcontainer">
-            <img src="img/logo.png" alt="Avatar" class="avatar">
-        </div>
-    </div>
-    <div class="topnav" id="myTopnav">
-        <a href="home.html" class="active">Home</a>
-        <a href="login.html">Logout</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="entrycreate.html">Create Entry</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    
     <!--This when run in PHP-->
     <?php
         $Username = $_POST['Uname'];
