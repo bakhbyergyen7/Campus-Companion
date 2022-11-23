@@ -1,124 +1,108 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <link rel="stylesheet" href="style.css">
-  <title>Campus Companion Login Page</title>
-  <script src="login.js" defer></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-
-</head>
-
-  <body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+    <script src="login.js" defer></script>
     <div class="logodiv">
-      <div class="imgcontainer">
-          <img src="img/logo.png" alt="Avatar" class="avatar">
-        </div>
+      <h1><span id="blue">j</span><span id="red">hawk</span><span id="blue">soft</span></h1>
     </div>
     <div class="topnav" id="myTopnav">
-      <a href="login.html" class="active">Login</a>
+      <ul>
+        <li><a id="nav" href="login.html" class="active">Login</a></li>
+        <li><a id="nav" href="contact.html" >Contact</a></li>
+        <li><a id="nav" href="about.html">About</a></li>
+      </ul>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
+        <i class="fa fa-bars"></i></a>
+    
     </div>
+  </head>
 
+  <body >
+    <div class="login-box" style="margin-top:80px">
+      <h2>Login</h2>
+      <form>
+        <div class="user-box">
+          <input
+          type="email"
+          id="emailField"
+          pattern=".+@ku\.edu"
+          size="64"
+          maxlength="64"
+          placeholder=""
+          name="uname"
+          title="Please provide only a KU email address"
+          required>
+
+          <label>KU Email Address: </label>
+        </div>
+        <div class="user-box">
+          <input
+          type="password"
+          id="psw"
+          placeholder=""
+          name="psw"home.html
+          minlength="8"
+          maxlength="32"
+          size="32"
+          onInput="check()"
+          required>
+          <label>Password:</label>
+        </div>
+        <button onsubmit="check()" type="submit">Login</button><br><br>
+        <button class="button1" type="submit">Create An Account</button><br><br>
+        <label style="color: white;">
+          <input type="checkbox" checked='' name="remember"> Remember me
+        </label><br><br><br><br>
+        <div id="set">
+          <div id="count">Length : 0</div>
+          <i id="see" onclick="see()" class="far fa-eye"></i>
+          </div>
+          <div id="checker">
+            <div id="check0">
+                  <i class="far fa-check-circle"></i>  <span> Length more than 8.</span>
+            </div>
+            <div id="check1">
+                  <i class="far fa-check-circle"></i>  <span> Length less than 32.</span>
+            </div>
+            <div id="check2">
+                  <i class="far fa-check-circle"></i>  <span> Contains numerical character.</span>
+            </div>
+            <div id="check3">
+                  <i class="far fa-check-circle"></i>   <span>Contains special character.</span>
+            </div>
+          </div>
+          <span class="psw"> <a href="#" style="font-size: 10px;" class="pas">Forgot password?</a></span><br><br><br>
+      </div>
+        
+      </form>
+    </div>
     <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
         }
-      }
-    </script>
+        function todayDate(){
+          var d = new Date();
+          var n = d.getFullYear();
+                  
+          return document.getElementById("date").innerHTML = n;
+        }
 
-    <h2>Jhawksoft Login</h2>
-
-    <form onsubmit="return check()" action="home.html" method="post" class="formclass">
-      <div class="imgcontainer">
-        <img src="img/logo.png" alt="Avatar" class="avatar">
-      </div>
-
-      <div class="container">
-        <label for="uname"><b>KU Email Address: </b></label>
-        <input
-        type="email"
-        id="emailField"
-        pattern=".+@ku\.edu"
-        size="64"
-        maxlength="64"
-        placeholder="jayhawk@ku.edu"
-        name="uname"
-        title="Please provide only a KU email address"
-        required>
-
-        <label for="psw"><b>Password: </b></label>
-        <input
-        type="password"
-        id="psw"
-        placeholder="Enter Password"
-        name="psw"home.html
-        minlength="8"
-        maxlength="32"
-        size="32"
-        onInput="check()"
-        required>
-
-        <br>
-         <div id="set" >
-        <div id="count">Length : 0</div>
-        <i id="see" onclick="see()" class="far fa-eye"></i>
-         </div>
-           <div id="check0">
-                <i class="far fa-check-circle"></i>  <span> Length more than 8.</span>
-           </div>
-           <div id="check1">
-                <i class="far fa-check-circle"></i>  <span> Length less than 32.</span>
-           </div>
-           <div id="check2">
-                <i class="far fa-check-circle"></i>  <span> Contains numerical character.</span>
-           </div>
-           <div id="check3">
-                <i class="far fa-check-circle"></i>   <span>Contains special character.</span>
-           </div>
-</div>
-        <button onsubmit="check()" type="submit">Login</button>
-        <label>
-          <input type="checkbox" checked="checked" name="remember"> Remember me
-        </label>
-
-      </div>
-
-      <div class="container" style="background-color:#f1f1f1">
-        <span class="psw">Forgot <a href="#">password?</a></span>
-        <p>
-
-
-
-        </p>
-      </div>
-    </form>
-
-    <h3>Or If You Are New:</h3>
-
-    <form action="create.html" method="post" >
-        <style>
-            .button1{width: 250px;}
-        </style>
-
-        <button class="button1" type="submit">Create An Account</button>
-
-    </form>
-
+        todayDate()
+      </script>
+        <footer style="margin-top: 750px;">
+          &copy; <em id="date"></em> jHawkSoft
+        </footer>
+    
   </body>
-  <footer>
 
 
-    jHawkSoft
-</footer>
 </html>
