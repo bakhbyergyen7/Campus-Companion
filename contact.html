@@ -4,25 +4,28 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <header>
+        <div class="logodiv">
+            <h1><span id="blue">j</span><span id="red">hawk</span><span id="blue">soft</span></h1>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <ul>
+            <li><a id="nav" href="login.html" >Login</a></li>
+            <li><a href="home.html" >Home</a></li>
+            <li><a id="nav" href="contact.html" class="active" >Contact</a></li>
+            <li><a id="nav" href="about.html">About</a></li>
+            <li><a href="help.html" class="active">Help</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        
+        </div>
+    </header>
 </head>
  
 <body>
-    <div class="logodiv">
-        <div class="imgcontainer">
-            <img src="img/logo.png" alt="Avatar" class="avatar">
-          </div>
-    </div>
-    <!--Navigation--> 
-    <div class="topnav" id="myTopnav">
-        <a href="home.html" >Home</a>
-        <a href="login.html">Logout</a>
-        <a href="contact.html" class="active">Contact</a>
-        <a href="about.html">About</a>
-        <a href="help.html">Help</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    
     <!--This when run in PHP--> 
     <?php
         $Username = $_POST['Uname'];
@@ -42,10 +45,10 @@
         <!--This will link to a "thanks for contacting us page in php"-->
         <form action="/action_page.php">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="First Name...">
       
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <input type="text" id="lname" name="lastname" placeholder="Last Name..">
       
           <label for="country">Country</label>
           <select id="country" name="country">
@@ -55,11 +58,10 @@
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
       
-          <input type="submit" value="Submit">
+          <button type="submit" value="Submit" >Submit </button>
         </form>
 
-    
-    
+    </div>
     
     <!--Script for the navbar--> 
 
@@ -72,10 +74,19 @@
                 x.className = "topnav";
             }
         }
-    </script>
+        function todayDate(){
+                var d = new Date();
+                var n = d.getFullYear();
+                
+                return document.getElementById("date").innerHTML = n;
+            }
 
+            todayDate()
+
+    </script>
+    <footer>
+        &copy; <em id="date"></em> jHawkSoft
+    </footer>
 </body>
-<footer>
-    jHawkSoft
-</footer>
+
 </html>
