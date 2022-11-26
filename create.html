@@ -1,10 +1,112 @@
 <htmL>
 <head>
-<h1>Create An Account<h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Create</title>
+    <script src="create.js" defer></script>
+    <div class="logodiv">
+      <h1><span id="blue">j</span><span id="red">hawk</span><span id="blue">soft</span></h1>
+    </div>
+    <div class="topnav" id="myTopnav">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i></a>
+    
+    </div>
 </head>
 
 <body>
-Filler so the create an account button navigates somewhere.
+    <div class="login-box" style="margin-top:80px">
+      <h2>Create an Account</h2>
+      <form>
+        <div class="user-box">
+          <input
+          type="email"
+          id="emailField"
+          pattern=".+@ku\.edu"
+          size="64"
+          maxlength="64"
+          placeholder=""
+          name="uname"
+          title="Please provide only a KU email address"
+          required>
+
+          <label>KU Email Address: </label>
+        </div>
+        <div class="user-box">
+          <input
+          type="password"
+          id="psw"
+          placeholder=""
+          name="psw"home.html
+          minlength="8"
+          maxlength="32"
+          size="32"
+          onInput="check()"
+          required>
+          <label>Password:</label>
+        </div>
+
+	<div class="user-box">
+          <input
+          type="password"
+          id="psw1"
+          placeholder=""
+          name="psw1"home.html
+          minlength="8"
+          maxlength="32"
+          size="32"
+          onInput="check()"
+          required>
+          <label>Confirm Password:</label>
+        </div>
+        <button onsubmit="check()" type="submit">Create</button><br><br>
+        <div id="set">
+          <div id="count">Length : 0</div>
+          <i id="see" onclick="see()" class="far fa-eye"></i>
+          </div>
+          <div id="checker">
+            <div id="check0">
+                  <i class="far fa-check-circle"></i>  <span> Length more than 8.</span>
+            </div>
+            <div id="check1">
+                  <i class="far fa-check-circle"></i>  <span> Length less than 32.</span>
+            </div>
+            <div id="check2">
+                  <i class="far fa-check-circle"></i>  <span> Contains numerical character.</span>
+            </div>
+            <div id="check3">
+                  <i class="far fa-check-circle"></i>   <span>Contains special character.</span>
+            </div>
+            <div id="check4">
+                  <i class="far fa-check-circle"></i>   <span>Confirmed password matches.</span>
+            </div>
+          </div>
+      </div>
+        
+      </form>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        function todayDate(){
+          var d = new Date();
+          var n = d.getFullYear();
+                  
+          return document.getElementById("date").innerHTML = n;
+        }
+
+        todayDate()
+      </script>
+        <footer style="margin-top: 750px;">
+          &copy; <em id="date"></em> jHawkSoft
+        </footer>
+
 </body>
 
 </html>
