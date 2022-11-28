@@ -480,3 +480,9 @@ input:hover
         width: 100%;
     }
 }
+.feedback {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
