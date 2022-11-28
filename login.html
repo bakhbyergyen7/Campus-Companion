@@ -24,7 +24,7 @@
   <body >
     <div class="login-box" style="margin-top:80px">
       <h2>Login</h2>
-      <form>
+      <form action="home.html" method="post">
         <div class="user-box">
           <input
           type="email"
@@ -53,8 +53,6 @@
           <label>Password:</label>
         </div>
         <button onsubmit="check()" type="submit">Login</button><br><br>
-        <button class="button1" type="submit">Create An Account</button><br><br>
-        <label style="color: white;">
           <input type="checkbox" checked='' name="remember"> Remember me
         </label><br><br><br><br>
         <div id="set">
@@ -79,6 +77,10 @@
       </div>
         
       </form>
+<form action="create.html" method="post">>
+	<br><br><br><button class="button1" type="submit">Create An Account</button><br><br>
+        <label style="color: white;">
+</form>
     </div>
     <script>
         function myFunction() {
