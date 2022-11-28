@@ -23,10 +23,10 @@ function see()
 function check()
 {
     var input = document.getElementById("psw").value;
+    var input1 = document.getElementById("psw1").value;
 
     input=input.trim();
     document.getElementById("psw").value=input;
-    document.getElementById("psw1").value=input1;
     document.getElementById("count").innerText="Length : " + input.length;
     if(input.length>=8)
     {
@@ -69,9 +69,8 @@ function check()
     {
        document.getElementById("check3").style.color="red";
        return false;
-       alert('Please make sure that your password contains a special character.')
+       alert('Please make sure that your ppassword contains a special character.')
     }
-
     if(input==input1)
     {
         document.getElementById("check4").style.color="green";
